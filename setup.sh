@@ -27,10 +27,15 @@ sudo apt-get install make
 sudo cpan
 sudo cpan Switch
 sudo cpan Appache::Session , Time::Local, URI::Escape,  CGI qw/:standard *table start_ul/;
+sudo cpan PDF::API2
 
 ## Install phpamyadmin
 sudo apt-get install phpmyadmin
 sudo phpenmod mbstring
+sudo phpenmod mcrypt
 sudo systemctl restart apache2 
 
+## Create MySQL user
+## mysql> CREATE USER 'sammy'@'localhost' IDENTIFIED BY 'password';
+## mysql> GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
 
