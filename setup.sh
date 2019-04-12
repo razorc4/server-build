@@ -27,7 +27,9 @@ sudo apt-get install make
 sudo cpan
 sudo cpan Switch
 sudo cpan Appache::Session , Time::Local, URI::Escape,  CGI qw/:standard *table start_ul/;
-sudo cpan PDF::API2
+sudo cpan -T Compress::Zlib
+sudo cpan -T Font::TTF
+sudo cpan -T PDF::API2
 
 ## Install phpamyadmin
 sudo apt-get install phpmyadmin
